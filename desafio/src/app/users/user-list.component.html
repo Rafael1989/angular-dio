@@ -1,0 +1,21 @@
+<h2>User List</h2>
+<a [routerLink]="['/users/info']" class="btn btn-primary mr-2">Adicionar usuário</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>USER DETAILS</th>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let user of filteredUsers">
+            <td>
+                <div><img [src]="user.imageUrl" width="40" height="40"></div>
+                <div>{{user.name}}<br>{{user.email}}<br>{{user.box}}<br>{{user.creationDate}}<br></div>
+            </td>
+            <td><a [routerLink]="['/users/info', user.id]" class="btn btn-primary mr-2">Editar</a></td>
+            <td><button (click)="deleteById(user.id)" class="btn btn-danger">Excluir</button></td>
+        </tr>
+    </tbody>
+</table>
