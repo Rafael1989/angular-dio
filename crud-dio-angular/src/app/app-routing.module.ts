@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { TodoComponent } from './pages/todo/todo.component';
 import { UsersFormComponent } from './pages/users/users-form/users-form.component';
 import { UsersListComponent } from './pages/users/users-list/users-list.component';
 
@@ -12,6 +14,12 @@ const routes: Routes = [
   },
   {
     path: 'form/:id', component: UsersFormComponent
+  },
+  {
+    path: 'todo', component: TodoComponent
+  },
+  {
+    path: 'data-binding', component: DataBindingComponent
   }
 ];
 

@@ -7,6 +7,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { UsersListComponent } from './pages/users/users-list/users-list.component';
 import { UsersFormComponent } from './pages/users/users-form/users-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { DataBindingComponent } from './pages/data-binding/data-binding.component';
+import { TodoComponent } from './pages/todo/todo.component';
+import { ButtonComponent } from './components/button/button.component';
+import { LifeCycleComponent } from './components/life-cycle/life-cycle.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +18,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HeaderComponent,
     UsersListComponent,
     UsersFormComponent,
+    DataBindingComponent,
+    TodoComponent,
+    ButtonComponent,
+    LifeCycleComponent,
   ],
   imports: [
     BrowserModule,
